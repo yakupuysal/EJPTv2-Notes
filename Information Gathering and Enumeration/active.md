@@ -4,7 +4,19 @@
 	- Host Discover:
  		- `nmap -sn <ip_address>/<CDIR>`
    	- Port Scan:
-   		- 
+   		- Default nmap scan: `nmap <ip_address>`
+     		- Scan entire tcp port range: `nmap -Pn -p- <ip_address>`
+       		- Scan specific port(s): `nmap -Pn -p 80,445,3389 <ip_address>`
+	 	- Scan port range: `nmap -Pn -p1-1000 <ip_address>`
+   		- Fast scan: `nmap -Pn -F <ip_address>`
+     		- UDP port scan: `nmap -Pn -sU <ip_address>`
+       		- Verbose: `nmap -Pn -sU <ip_address> -v`
+   	     	- Service version detection: `nmap -Pn -F -sV <ip_address>`
+	  	- Operating system detection scan: `nmap -Pn -F -sV -O <ip_address>`
+    		- Nmap script scan: `nmap -Pn -F -sV -O -sC <ip_address>`
+   		- Timing template scan: `nmap -Pn -F -T4 -sV -O -sC <ip_address>` (Default T4, T0-5, Higher faster)
+   	 	- Export scan result as txt: `nmap -Pn -F -T4 -sV -O -sC <ip_address> -oN test.txt`
+   	  	- Export scan result as xml: `nmap -Pn -F -T4 -sV -O -sC <ip_address> -oX test.xml`
 - netdiscover
 	- `sudo netdiscover -i eth0 -r 192.168.2.0/24`
 - For doing DNS zonetransfer: `dig axfr <nameserver> domain`
