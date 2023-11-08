@@ -10,7 +10,7 @@
 	 	- Scan port range: `nmap -Pn -p1-1000 <ip_address>`
    		- Fast scan: `nmap -Pn -F <ip_address>`
      		- UDP port scan: `nmap -Pn -sU <ip_address>`
-       		- Verbose: `nmap -Pn -sU <ip_address> -v`
+  		- Verbose: `nmap -Pn -sU <ip_address> -v`
    	     	- Service version detection: `nmap -Pn -F -sV <ip_address>`
 	  	- Operating system detection scan: `nmap -Pn -F -sV -O <ip_address>`
     		- Nmap script scan: `nmap -Pn -F -sV -O -sC <ip_address>`
