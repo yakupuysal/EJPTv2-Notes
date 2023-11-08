@@ -5,8 +5,8 @@
  		- `nmap -sn <ip_address>/<CDIR>`
    	- Port Scan:
    		- Default nmap scan: `nmap <ip_address>`
-     		- Scan entire tcp port range: `nmap -Pn -p- <ip_address>`
-       		- Scan specific port(s): `nmap -Pn -p 80,445,3389 <ip_address>`
+        	- Scan entire tcp port range: `nmap -Pn -p- <ip_address>`
+  		- Scan specific port(s): `nmap -Pn -p 80,445,3389 <ip_address>`
 	 	- Scan port range: `nmap -Pn -p1-1000 <ip_address>`
    		- Fast scan: `nmap -Pn -F <ip_address>`
      		- UDP port scan: `nmap -Pn -sU <ip_address>`
